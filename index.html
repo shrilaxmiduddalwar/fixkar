@@ -1,117 +1,257 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FixKar – Aapka ghar kaam ka trusted digital solution</title>
+  <title>FixKar – Trusted Digital Solution</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <div class="logo">FixKar</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="menu">☰</button>
-    </div>
-  </nav>
-
-  <!-- Hero / Banner -->
-  <header id="home" class="hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <h1>FixKar – Aapka ghar kaam ka trusted digital solution</h1>
-        <p>Plumber, Electrician, Painter, Carpenter, AC/Fridge repair aur aur bhi services — sab ek hi app par.</p>
-        <div class="hero-ctas">
-          <button id="downloadBtn" class="btn primary">Download on Google Play</button>
-          <a class="btn ghost" href="#features">Explore Features</a>
+  <!-- HEADER -->
+  <header class="site-header" id="home" role="banner">
+    <div class="header-inner">
+      <div class="logo-wrap" aria-hidden="false">
+        <div class="logo-glow" aria-hidden="true">
+          <img src="logo.jpeg" alt="FixKar logo" class="logo" />
         </div>
-        <p class="trust">🔒 SSL Secured & Diamond Certified – Safe Payments & Secure Data</p>
+        <div class="brand">
+          <h1 class="brand-title">FixKar</h1>
+          <p class="brand-tag">Aapka ghar kaam ka trusted digital solution</p>
+        </div>
       </div>
-      <div class="hero-right" aria-hidden="true">
-        <div class="phone-mockup"></div>
-      </div>
+      <button id="downloadBtn" class="download-btn" aria-haspopup="dialog">Download App</button>
     </div>
+
+    <!-- Slogan strip -->
+    <div class="slogan-strip">🔒 SSL Secured & Diamond Certified – Safe Payments & Secure Data</div>
+
+    <!-- NAV -->
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-btn" href="#home">Home</a>
+      <a class="nav-btn" href="#about">About</a>
+      <a class="nav-btn" href="#features">Features</a>
+      <a class="nav-btn" href="#privacy">Privacy Policy</a>
+      <a class="nav-btn" href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- About -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>हमारे बारे में</h2>
-      <p class="lead">FixKar har ghar ko turant trusted aur verified karigar se jodta hai.</p>
-      <ul class="bullets">
-        <li>✅ Fast booking</li>
-        <li>✅ Trusted & verified workers</li>
-        <li>✅ Easy app in Hindi/English</li>
-      </ul>
-    </div>
-  </section>
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Repair & maintenance, simplified.</h2>
+        <p>Plumber, Electrician, Painter, Carpenter, AC/Fridge repair aur aur bhi services — sab ek hi app par.</p>
+        <div class="hero-ctas">
+          <button id="heroDownload" class="btn primary">Download (Coming Soon)</button>
+          <a href="#features" class="btn ghost">Explore Features</a>
+        </div>
+      </div>
+    </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h3 class="section-title">About FixKar</h3>
+    <p class="section-sub">FixKar is designed to make repair and maintenance hassle-free.</p>
 
-  <!-- How It Works -->
-  <section id="how" class="section how">
-    <div class="container">
-      <h2>Kaise Kaam Karta Hai</h2>
-      <h3>For Customers</h3>
-      <ol class="steps">
-        <li>Service select karo</li>
-        <li>Photo upload karo</li>
-        <li>Karigar choose karo aur live track karo</li>
-        <li>Payment & rating do</li>
-      </ol>
-      <h3>For Karigars</h3>
-      <p>FixKar app se register karke turant job notifications paaiye.</p>
-    </div>
-  </section>
+    <div class="about-grid">
+      <article class="about-card red">
+        <h4>On-Demand Services</h4>
+        <p>Book experts in just a few clicks – instant availability for urgent and scheduled repairs.</p>
+      </article>
 
-  <!-- Features -->
-  <section id="features" class="section features">
-    <div class="container">
-      <h2>Features</h2>
-      <div class="features-grid">
-        <div class="feature">📍 Live GPS karigar tracking</div>
-        <div class="feature">💬 In-app chat, call & voice msg</div>
-        <div class="feature">🎙 Voice assistant (local language)</div>
-        <div class="feature">⭐ Rating & favourite karigar</div>
-        <div class="feature">💳 FixKar Wallet & secure payments</div>
-        <div class="feature">🆘 Emergency help button</div>
+      <article class="about-card blue">
+        <h4>Verified Technicians</h4>
+        <p>Skilled, background-checked professionals for safe & reliable service.</p>
+      </article>
+
+      <article class="about-card green">
+        <h4>Fair & Transparent Pricing</h4>
+        <p>No hidden costs. Instant quotes so you know exactly what you'll pay.</p>
+      </article>
+
+      <article class="about-card yellow">
+        <h4>Doorstep Service</h4>
+        <p>We come to your home — repair & service at your convenience.</p>
+      </article>
+
+      <article class="about-card purple">
+        <h4>24×7 Support</h4>
+        <p>Assistance whenever you need it — chat, call or request support anytime.</p>
+      </article>
+
+      <article class="about-card orange">
+        <h4>Save Time & Money</h4>
+        <p>We match the right technician to your problem so you don’t waste time searching.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FEATURES (compact) -->
+    <section id="features" class="section features">
+  <div class="container">
+    <h3 class="section-title">Key Features</h3>
+    <div class="feature-boxes">
+      <div class="feature-card">
+        <h4>📍 Location-based Booking</h4>
+        <p>Get nearest technician suggestions instantly.</p>
+      </div>
+      <div class="feature-card">
+        <h4>⚡ Instant Assignment</h4>
+        <p>Technician assigned within seconds of booking.</p>
+      </div>
+      <div class="feature-card">
+        <h4>🛠 Wide Range of Services</h4>
+        <p>AC, Fridge, Washing Machine, Mobile, Plumbing & Electrical.</p>
+      </div>
+      <div class="feature-card">
+        <h4>💳 Multiple Payment Options</h4>
+        <p>UPI, card, wallet or cash at your convenience.</p>
+      </div>
+      <div class="feature-card">
+        <h4>⭐ Ratings & Reviews</h4>
+        <p>Ensure trust with customer ratings and reviews.</p>
+      </div>
+      <div class="feature-card">
+        <h4>🔄 Easy Rescheduling</h4>
+        <p>Cancel or reschedule with a single click.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-buttons">
-        <a href="mailto:support@fixkar.in" class="contact-btn email">📧 Email</a>
-        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
-        <a href="https://instagram.com/fixkar" target="_blank" class="contact-btn insta">📷 Instagram</a>
+    <!-- PRIVACY POLICY: FLASH-CARD CAROUSEL -->
+    <section id="privacy" class="section privacy">
+      <div class="container narrow">
+        <h3 class="section-title">Privacy Policy</h3>
+        <p class="muted">Effective Date: <strong>[Insert Date]</strong> &bull; Last Updated: <strong>[Insert Date]</strong></p>
+
+        <div class="carousel" aria-roledescription="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Card 1: Overview -->
+            <article class="policy-card">
+              <h4>Overview</h4>
+              <p>At FixKar, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data when you use our mobile application and related services.</p>
+            </article>
+
+            <!-- Card 2: Information We Collect -->
+            <article class="policy-card">
+              <h4>1. Information We Collect</h4>
+              <ul>
+                <li><strong>Personal:</strong> Name, email, phone, address, payment details.</li>
+                <li><strong>Service:</strong> Booking & service details.</li>
+                <li><strong>Device:</strong> IP, device model, OS, usage data.</li>
+                <li><strong>Location:</strong> With your permission to connect you to nearby technicians.</li>
+              </ul>
+            </article>
+
+            <!-- Card 3: How We Use Your Info -->
+            <article class="policy-card">
+              <h4>2. How We Use Information</h4>
+              <ul>
+                <li>Provide, manage & improve our services.</li>
+                <li>Process bookings and payments.</li>
+                <li>Communicate updates and support.</li>
+                <li>Personalize experience and prevent fraud.</li>
+              </ul>
+            </article>
+
+            <!-- Card 4: Sharing -->
+            <article class="policy-card">
+              <h4>3. Sharing of Information</h4>
+              <p>We may share limited details to:</p>
+              <ul>
+                <li>Service providers (technicians) to fulfill bookings.</li>
+                <li>Payment partners to process transactions.</li>
+                <li>Legal authorities when required.</li>
+                <li>Third-party analytics (e.g., Google Analytics, Firebase).</li>
+              </ul>
+              <p><em>We do not sell or rent your personal data.</em></p>
+            </article>
+
+            <!-- Card 5: Data Security -->
+            <article class="policy-card">
+              <h4>4. Data Security</h4>
+              <p>We use industry-standard security measures to protect data, but no system can be 100% secure. We continually improve safeguards.</p>
+            </article>
+
+            <!-- Card 6: Your Rights -->
+            <article class="policy-card">
+              <h4>5. Your Rights</h4>
+              <p>Depending on your location, you may be able to access, update, or delete your data, withdraw consent for location tracking, or opt out of marketing.</p>
+              <p>To exercise rights, contact: <strong>support@fixkar.in</strong></p>
+            </article>
+
+            <!-- Card 7: Children's Privacy -->
+            <article class="policy-card">
+              <h4>6. Children’s Privacy</h4>
+              <p>FixKar is not intended for children under 13. We do not knowingly collect personal info from children and will delete any such data if found.</p>
+            </article>
+
+            <!-- Card 8: Third-Party Links & Changes -->
+            <article class="policy-card">
+              <h4>7. Third-Party Links & Changes</h4>
+              <p>App may link to external sites — we are not responsible for their privacy practices. Policy updates will be posted with a new 'Last Updated' date.</p>
+            </article>
+
+            <!-- Card 9: Contact -->
+            <article class="policy-card">
+              <h4>8. Contact Us</h4>
+              <p>FixKar Support Team<br>Email: <a href="mailto:support@fixkar.in">support@fixkar.in</a><br>Phone: +91-XXXXXXXXXX</p>
+            </article>
+          </div>
+
+          <!-- Carousel controls -->
+          <div class="carousel-controls">
+            <button id="prevBtn" class="ctrl" aria-label="Previous">‹</button>
+            <div class="dots" id="dots"></div>
+            <button id="nextBtn" class="ctrl" aria-label="Next">›</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h3 class="section-title">Contact Us</h3>
+        <p class="muted">Reach out to us for support or queries.</p>
+
+        <div class="contact-row">
+          <a href="mailto:fixkar9@gmail.com" class="contact-pill email">📧 Email</a>
+          <a href="https://wa.me/919654993293" target="_blank" rel="noopener" class="contact-pill whatsapp">💬 WhatsApp</a>
+          <a href="https://www.instagram.com/fixkarapp?igsh=cjFvNnhia3Uwa2xt" target="_blank" rel="noopener" class="contact-pill insta">📷 Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container tight">
+    <div class="footer-inner">
       <p>© 2025 FixKar. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Popup Modal -->
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span id="closePopup" class="close">&times;</span>
-      <h3>🚀 Coming Soon</h3>
-      <p>Your app would be live soon!</p>
+  <!-- POPUP MODAL -->
+  <div class="popup" id="popup" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="popup-content" role="document">
+      <button class="close" id="closePopup" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <h4>🚀 Coming Soon</h4>
+        <p>Our mobile app is being prepared. We'll notify you when it's live.</p>
+        <form id="notifyForm" class="notify-form" aria-label="Notify me form">
+          <input type="email" name="email" id="notifyEmail" placeholder="Enter email to get notified" required />
+          <button type="submit" class="btn primary small">Notify Me</button>
+        </form>
+        <p id="notifyMsg" class="muted small"></p>
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script defer src="script.js"></script>
