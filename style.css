@@ -256,3 +256,129 @@ linear-gradient(135deg, rgba(12,60,120,0.12), rgba(0,198,255,0.06));display:flex
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 24px 60px rgba(2, 6, 23, 0.25);
 }
+/* Privacy: simple grid (no carousel) */
+.policy-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+@media (max-width: 1000px){
+  .policy-grid{ grid-template-columns: repeat(2, minmax(240px, 1fr)); }
+}
+@media (max-width: 680px){
+  .policy-grid{ grid-template-columns: 1fr; }
+}
+
+/* optional: tighter card width since no sliding now */
+.policy-card{
+  min-width: auto;
+  max-width: none;
+  flex: initial;
+}
+/* ===============================
+   PRIVACY – FLASH-CARD GRID (RESPONSIVE)
+   Paste at the end of your CSS
+================================= */
+
+/* Container width already controlled by .container.narrow in your CSS.
+   If needed, you can tighten it a bit on very small screens: */
+@media (max-width: 420px){
+  .container.narrow { padding-left: 12px; padding-right: 12px; }
+}
+
+/* Grid wrapper (no carousel) */
+.policy-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+/* Single policy card */
+.policy-card{
+  background: linear-gradient(180deg, var(--card), #ffffff);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 18px 48px rgba(2,6,23,0.08);
+  transition: transform .35s, box-shadow .35s;
+  /* Remove any fixed widths from carousel version */
+  min-width: auto;
+  max-width: none;
+  flex: initial;
+}
+
+/* Headings & text inside card */
+.policy-card h4{
+  margin: 0 0 8px;
+  color: var(--blue-1);
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+.policy-card p,
+.policy-card ul{
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+.policy-card ul{ padding-left: 18px; }
+
+/* Hover effect (desktop-ish only) */
+@media (hover: hover) and (pointer: fine){
+  .policy-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 26px 64px rgba(2,6,23,0.12);
+  }
+}
+
+/* ====== Breakpoints ====== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px){
+  .policy-grid{
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1000px){
+  .policy-grid{
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .policy-card h4{ font-size: 1.02rem; }
+  .policy-card p, .policy-card ul{ font-size: 0.95rem; }
+}
+
+/* Mobiles (big) */
+@media (max-width: 680px){
+  .policy-grid{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .policy-card{
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .policy-card h4{ font-size: 1rem; }
+  .policy-card p, .policy-card ul{ font-size: 0.94rem; line-height: 1.55; }
+}
+
+/* Small phones */
+@media (max-width: 400px){
+  .policy-card{
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .policy-card h4{ font-size: .98rem; }
+  .policy-card p, .policy-card ul{ font-size: 0.92rem; }
+}
+
+/* Reduced motion users: disable hover lift */
+@media (prefers-reduced-motion: reduce){
+  .policy-card{
+    transition: none;
+  }
+}
